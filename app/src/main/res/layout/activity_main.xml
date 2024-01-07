@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#B0E0E6"
+            android:text="ĐỘ ẨM KHÔNG KHÍ        ĐỘ ẨM ĐẤT             NHIỆT ĐỘ "
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtHUMIDITY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff0000"
+            android:text="28%"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_margin="5dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtSOID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#006400  "
+            android:text="28%"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_margin="5dp">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/txtTEMPERATURE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0000ff"
+            android:text="7°C"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_margin="5dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/btnMODE"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        app:textOn= "AUTO OFF"
+        app:textOff= "AUTO ON"
+        app:on="false"
+        app:colorBorder="@color/colorAccent"/>
+
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/btnPUMP"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        app:textOn= "PUMP OFF"
+        app:textOff= " PUMP ON"
+        app:on="false"
+        app:colorBorder="@color/colorAccent"/>
+
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/btnLED"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        app:textOn= "LED OFF"
+        app:textOff= " LED ON"
+        app:on="false"
+        app:colorBorder="@color/colorAccent"/>
+
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/btnLIGHT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        app:textOn= "NIGHT"
+        app:textOff= " NOT NIGHT "
+        app:on="false"
+        app:colorBorder="@color/colorAccent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
